@@ -1,0 +1,22 @@
+<div id="login">
+    <form method="POST" id="formLogin" enctype="multipart/form-data">
+        <div class="linea">
+            <h2>LOGIN</h2>
+        </div>
+        <div class="linea">
+            <label for="txtUser">Usuario:</label>
+            <input type="text" title="Ejem: Jhon555" maxlength="25" size="15" name="txtUser" id="txtUser" required autocomplete="off" placeholder="Ingrese su usuario" pattern="[\w]${3,}">
+        </div>
+        <div class="linea">
+            <label for="txtClave">Clave:</label>
+            <input type="password" name="txtClave" pattern="(?=.*\d)(?=.*\W)(?=.*\w).{3,}" id="txtClave" required placeholder="Ingrese su contraseña">
+        </div>
+        <div class="linea">
+            <input type="checkbox" name="chkRecuerdame" id="chkRecuerdame">
+            <label for="chkRecuerdame">Recuerdame</label>
+        </div>
+        <div class="linea">
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</div>
